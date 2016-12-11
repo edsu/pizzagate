@@ -1,5 +1,12 @@
 <html>
 
+<!--
+
+  This mindmap was extracted from 
+  http://www.nytimes.com/interactive/2016/12/10/business/media/100000004814276.mobile.html?_r=1
+
+-->
+
 <head>
   <script src="jquery-3.1.1.min.js"></script>
 </head>
@@ -249,6 +256,7 @@ function throttle(func, wait) { // from underscore.js
 <button onclick="remove()">Remove</button>
 <button onclick="whatevs()">Whatevs</button>
 <input placeholder="You Decide"type="text" size="10" id="replace"></input>
+<button onclick="reset()">Try Again</button>
 
 <p>
 Adapted from <a href="http://www.nytimes.com/interactive/2016/12/10/business/media/100000004814276.mobile.html?_r=1">Dissecting the #PizzaGate Conspiracy Theories</a>.
@@ -292,6 +300,11 @@ function remove() {
 
 function replace(t) {
   console.log($(t).text());
+}
+
+function reset() {
+  console.log("I know, lame.");
+  window.location.reload()
 }
 
 </script>
